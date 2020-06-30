@@ -1,21 +1,31 @@
-import { StatusBar } from 'expo-status-bar';
 import React from 'react';
-import { StyleSheet, Text, View } from 'react-native';
+import { StyleSheet, Text, View, ScrollView } from 'react-native';
+import { StatusBar } from 'expo-status-bar';
+import Constants from "expo-constants";
 
 export default function App() {
   return (
-    <View style={styles.container}>
-      <Text>Open up App.tsx to start working on your app!</Text>
-      <StatusBar style="auto" />
-    </View>
+    <ScrollView>
+      <View style={styles.container}>
+        <Text selectable style={styles.text}>{JSON.stringify(Constants, null, 4)}</Text>
+        <StatusBar style="inverted" animated backgroundColor="#282c34" />
+      </View>
+    </ScrollView>
   );
 }
 
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: '#fff',
-    alignItems: 'center',
-    justifyContent: 'center',
+    alignItems: "center",
+    justifyContent: "center",
+    marginTop: Constants.statusBarHeight,
+    padding: 8,
+    backgroundColor: "#282c34",
   },
+  text: {
+    color: "#ffffff",
+    fontWeight: "bold",
+    fontSize: 10
+  }
 });

@@ -1,14 +1,16 @@
 {
   "expo": {
-    "name": "mobile",
-    "slug": "mobile",
+    "name": "Ecoleta",
+    "slug": "ecoleta-nlw1-mobile",
     "version": "1.0.0",
+    "description": "Ecoleta - Next Level Week 1 - Mobile",
+    "owner": "Daniel Sausen",
     "orientation": "portrait",
     "icon": "./assets/icon.png",
     "splash": {
       "image": "./assets/splash.png",
       "resizeMode": "contain",
-      "backgroundColor": "#ffffff"
+      "backgroundColor": "#282c34"
     },
     "updates": {
       "fallbackToCacheTimeout": 0
